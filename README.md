@@ -97,12 +97,6 @@ src/
 4. 브랜치에 푸시하세요 (`git push origin feature/AmazingFeature`)
 5. Pull Request를 열어주세요
 
-## 📞 연락처
-
-- **Email**: [your-email@example.com]
-- **LinkedIn**: [your-linkedin-profile]
-- **GitHub**: [your-github-username]
-
 ---
 
 ⭐ 이 프로젝트가 도움이 되었다면 별표를 눌러주세요!
