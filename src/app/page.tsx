@@ -3,6 +3,7 @@
 import { ThemeProvider } from '@/components/ThemeProvider'
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
+import DocumentDownload from '@/components/DocumentDownload'
 import About from '@/components/About'
 import AIProjects from '@/components/AIProjects'
 import Experience from '@/components/Experience'
@@ -17,6 +18,7 @@ export default function Home() {
         <Navigation />
         <main>
           <Hero />
+          <DocumentDownload />
           <About />
           <AIProjects />
           <Experience />

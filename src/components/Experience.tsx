@@ -1,8 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { experiences } from '@/data/portfolio'
-import { Building2, Calendar, TrendingUp, Code2 } from 'lucide-react'
+import { experiences, publications } from '@/data/portfolio'
+import { Building2, Calendar, TrendingUp, Code2, BookOpen } from 'lucide-react'
 
 export default function Experience() {
   return (
@@ -16,10 +16,10 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Experience
+            Experience & Leadership
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            다양한 분야에서의 실무 경험과 성과
+            창업부터 투자 분석까지, 다양한 분야에서의 실무 경험과 리더십 성과
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto mt-6" />
         </motion.div>
@@ -88,7 +88,7 @@ export default function Experience() {
                       <div>
                         <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
                           <Code2 size={16} className="mr-2" />
-                          사용 기술
+                          사용 기술 & 도구
                         </h4>
                         <div className="flex flex-wrap gap-2">
                           {experience.technologies.map((tech, techIndex) => (
@@ -112,6 +112,53 @@ export default function Experience() {
           </div>
         </div>
 
+        {/* Publications Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-20"
+        >
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 flex items-center justify-center">
+              <BookOpen className="mr-3" size={28} />
+              독립 출판 도서
+            </h3>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              기획부터 출간까지 직접 완성한 3권의 도서
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {publications.map((publication, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-6 hover-lift border border-gray-200 dark:border-gray-600"
+              >
+                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg mb-4 mx-auto">
+                  <BookOpen className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2 text-center">
+                  {publication.title}
+                </h4>
+                <div className="text-center">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    {publication.publisher}
+                  </span>
+                  <div className="text-sm font-semibold text-primary-600 dark:text-primary-400">
+                    {publication.year}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Summary Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -121,18 +168,22 @@ export default function Experience() {
           className="mt-20"
         >
           <div className="bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8">
-            <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">3+</div>
-                <div className="text-gray-600 dark:text-gray-400">년간 실무 경험</div>
+                <div className="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">6년+</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm">실무 경험</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-secondary-600 dark:text-secondary-400 mb-2">900%</div>
-                <div className="text-gray-600 dark:text-gray-400">최대 매출 성장률</div>
+                <div className="text-3xl font-bold text-secondary-600 dark:text-secondary-400 mb-2">98%</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm">고객 만족도</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">10+</div>
-                <div className="text-gray-600 dark:text-gray-400">성공적인 프로젝트</div>
+                <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">85건</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm">기업분석 리포트</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">3권</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm">독립 출판 도서</div>
               </div>
             </div>
           </div>

@@ -2,13 +2,13 @@
 
 import { motion } from 'framer-motion'
 import { personalInfo, strengths } from '@/data/portfolio'
-import { Target, Lightbulb, Users, Leaf } from 'lucide-react'
+import { Target, Lightbulb, Users, Briefcase } from 'lucide-react'
 
 const icons = {
   0: Target,
   1: Lightbulb, 
   2: Users,
-  3: Leaf
+  3: Briefcase
 }
 
 export default function About() {
@@ -61,12 +61,12 @@ export default function About() {
             <div className="bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 hover-lift">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">900%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">QoQ 매출 성장</div>
+                  <div className="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">26%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">ROI 개선</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary-600 dark:text-secondary-400 mb-2">37%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">고객 유지율</div>
+                  <div className="text-3xl font-bold text-secondary-600 dark:text-secondary-400 mb-2">98%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">고객 만족도</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">130+</div>
@@ -93,11 +93,11 @@ export default function About() {
             핵심 강점
           </h3>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            다양한 경험과 전문성을 바탕으로 한 차별화된 강점들
+            경제학 + 창업 + AI 기술의 융합으로 만들어진 차별화된 전문성
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {strengths.map((strength, index) => {
             const IconComponent = icons[index as keyof typeof icons]
             
@@ -108,21 +108,58 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover-lift border border-gray-200 dark:border-gray-700"
+                className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover-lift border border-gray-200 dark:border-gray-700"
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg mb-4 mx-auto">
-                  <IconComponent className="w-6 h-6 text-white" />
+                <div className="flex items-start space-x-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex-shrink-0">
+                    <IconComponent className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                      {strength.title}
+                    </h4>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                      {strength.description}
+                    </p>
+                  </div>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 text-center">
-                  {strength.title}
-                </h4>
-                <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                  {strength.description}
-                </p>
               </motion.div>
             )
           })}
         </div>
+
+        {/* Additional Highlights */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-20"
+        >
+          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold mb-4">Key Achievements</h3>
+              <p className="text-lg opacity-90">
+                실전 경험을 통해 검증된 성과들
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div>
+                <div className="text-3xl font-bold mb-2">85건</div>
+                <div className="text-sm opacity-90">VID Investment 기업분석 리포트</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-2">35%</div>
+                <div className="text-sm opacity-90">Life Enjoy 월평균 매출 성장률</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-2">1.8K</div>
+                <div className="text-sm opacity-90">패션 SNS 계정 팔로워</div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
