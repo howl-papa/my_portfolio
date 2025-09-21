@@ -17,13 +17,27 @@ export default function Home() {
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
         <Navigation />
         <main>
-          <Hero />
-          <DocumentDownload />
-          <About />
-          <AIProjects />
-          <Experience />
-          <Skills />
-          <Contact />
+          <section id="home">
+            <Hero />
+          </section>
+          <section id="documents">
+            <DocumentDownload />
+          </section>
+          <section id="about">
+            <About />
+          </section>
+          <section id="ai-projects">
+            <AIProjects />
+          </section>
+          <section id="experience">
+            <Experience />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
         </main>
         <Footer />
       </div>
