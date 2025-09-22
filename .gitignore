@@ -10,6 +10,9 @@
 # Next.js
 /.next/
 /out/
+.next/cache/
+.next/standalone/
+.next/static/chunks/
 
 # Environment variables
 .env*.local
