@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박용락 Yongrak Park - AI 서비스 전략 기획자</title>
+    <meta name="description" content="AI를 통해 기업의 ROI를 높이는 실행 중심의 전략가. K뷰티 분야 AI 솔루션 개발 및 비즈니스 전략 기획 전문가.">
+    <meta name="author" content="Yongrak Park">
+    <meta name="keywords" content="AI,서비스기획,전략기획,뷰티테크,데이터분석,스타트업">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="박용락 Yongrak Park - AI 서비스 전략 기획자">
+    <meta property="og:description" content="AI를 통해 기업의 ROI를 높이는 실행 중심의 전략가">
+    <meta property="og:url" content="https://www.yongrak.pro">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="박용락 Yongrak Park - AI 서비스 전략 기획자">
+    <meta name="twitter:description" content="AI를 통해 기업의 ROI를 높이는 실행 중심의 전략가">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Malgun Gothic', sans-serif; }
+        .bg-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .glass { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.1); }
+        .scroll-smooth { scroll-behavior: smooth; }
+        
+        /* 애니메이션 */
+        .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 0.6s ease forwards; }
+        @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+        
+        /* 네비게이션 활성 상태 */
+        .nav-active { color: #2563eb !important; font-weight: 600; }
+    </style>
+</head>
+<body class="antialiased bg-gray-50 scroll-smooth">
+    <!-- Fixed Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md z-50 border-b">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">박</span>
+                    </div>
+                    <h1 class="text-xl font-bold text-gray-800">박용락 Portfolio</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">홈</a>
+                    <a href="#documents" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">문서 다운로드</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">소개</a>
+                    <a href="#ai-projects" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">AI 프로젝트</a>
+                    <a href="#experience" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">경력</a>
+                    <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">스킬</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">연락처</a>
+                </div>
+                
+                <!-- 모바일 메뉴 버튼 -->
+                <button id="mobile-menu-button" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- 모바일 메뉴 -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+                <div class="px-4 py-2 space-y-2">
+                    <a href="#home" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">홈</a>
+                    <a href="#documents" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">문서 다운로드</a>
+                    <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">소개</a>
+                    <a href="#ai-projects" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">AI 프로젝트</a>
+                    <a href="#experience" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">경력</a>
+                    <a href="#skills" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">스킬</a>
+                    <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors">연락처</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-16">
+        <!-- Hero Section -->
+        <section id="home" class="bg-gradient text-white py-20 min-h-screen flex items-center">
+            <div class="max-w-6xl mx-auto px-4 text-center fade-in">
+                <div class="mb-8">
+                    <div class="w-32 h-32 bg-white/20 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <span class="text-6xl font-bold">박</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">박용락</h1>
+                    <h2 class="text-2xl md:text-3xl text-blue-100 mb-6">Yongrak Park</h2>
+                </div>
+                <p class="text-xl md:text-2xl mb-8 leading-relaxed">
+                    <strong>AI 서비스 전략 기획 | 뷰티 & 리테일 도메인 전문가</strong><br>
+                    AI를 통해 기업의 ROI를 높이는 실행 중심의 전략가
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        📧 연락하기
+                    </a>
+                    <a href="#documents" class="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105">
+                        📄 이력서 다운로드
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documents Section -->
+        <section id="documents" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold mb-4">📄 문서 다운로드</h2>
+                    <p class="text-xl text-gray-600">상세한 이력서와 프로필을 다운로드하여 확인하세요</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 fade-in">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-2xl">👤</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">상세 프로필</h3>
+                            <p class="text-blue-100 mb-6">개인 프로필 및 핵심 역량 정보를 확인하세요</p>
+                        </div>
+                        <div class="text-center">
+                            <button onclick="downloadFile('/Profile_Updated.html', 'Profile_Updated.html')" 
+                                    class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center space-x-2">
+                                <span>📥</span>
+                                <span>프로필 다운로드</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 fade-in">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-2xl">📋</span>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">이력서 (CV)</h3>
+                            <p class="text-purple-100 mb-6">상세 경력 및 프로젝트 정보를 확인하세요</p>
+                        </div>
+                        <div class="text-center">
+                            <button onclick="downloadFile('/CV_Updated.html', 'CV_Updated.html')" 
+                                    class="bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center space-x-2">
+                                <span>📥</span>
+                                <span>이력서 다운로드</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold mb-4">👨‍💼 소개</h2>
+                    <p class="text-xl text-gray-600">AI를 통해 실질적인 비즈니스 가치를 창출합니다</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="fade-in">
+                        <div class="bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-6 text-gray-800">💡 About Me</h3>
+                            <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                                AI를 통해 기업의 ROI를 높이는 <strong class="text-blue-600">실행 중심의 전략가</strong>입니다. 
+                                K뷰티 분야에서 AI 솔루션 개발과 비즈니스 전략 기획을 결합하여 
+                                실질적인 성과를 창출합니다.
+                            </p>
+                            <p class="text-lg leading-relaxed text-gray-700">
+                                <strong>Microsoft AI School</strong> 캡스톤 리딩과 <strong>Responsible AI</strong> 구현을 
+                                통해 윤리적이면서도 효과적인 AI 솔루션을 개발합니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6 fade-in">
+                        <div class="bg-white p-6 rounded-xl shadow-lg">
+                            <h4 class="font-bold text-lg mb-4 text-blue-600 flex items-center">
+                                <span class="text-2xl mr-3">🎯</span>
+                                핵심 가치
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Responsible AI 구현</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 데이터 기반 의사결정</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 실행 중심 전략 기획</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 크로스 도메인 전문성</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-xl shadow-lg">
+                            <h4 class="font-bold text-lg mb-4 text-purple-600 flex items-center">
+                                <span class="text-2xl mr-3">🏆</span>
+                                핵심 강점
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 크로스 도메인 전문성 (경제+창업+AI)</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 입증된 실행력 (85건 분석, 35% 성장)</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 커뮤니케이션 & 리더십</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 패션/리테일 현장 경험</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Projects Section -->
+        <section id="ai-projects" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold mb-4">🚀 AI 프로젝트</h2>
+                    <p class="text-xl text-gray-600">실질적인 비즈니스 가치를 창출하는 AI 솔루션들</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- My Beauty AI -->
+                    <div class="bg-gradient-to-br from-pink-50 to-purple-50 p-8 rounded-xl border-2 border-pink-100 hover:border-pink-300 transition-all duration-300 transform hover:scale-105 shadow-lg fade-in">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-bold mb-3 text-purple-800 flex items-center">
+                                <span class="text-3xl mr-3">💄</span>
+                                My Beauty AI
+                            </h3>
+                            <p class="text-gray-700 mb-4">개인화 스킨케어 루틴 추천 시스템</p>
+                            <p class="text-gray-600 text-sm mb-4">PostgreSQL 전성분 DB 구축, LlamaIndex RAG 기반 맞춤형 추천</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-3 text-purple-700">🛠️ 기술 스택:</h4>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">LlamaIndex</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">RAG</span>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">AI/ML</span>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-3 text-purple-700">📈 성과:</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                                <li>개인화 추천으로 <strong class="text-green-600">26% ROI 향상</strong></li>
+                                <li>전성분 데이터베이스 구축으로 정확도 개선</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/howl-papa/my_beauty_ai" target="_blank" 
+                           class="inline-flex items-center text-purple-600 hover:text-purple-800 font-medium">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd" />
+                            </svg>
+                            GitHub 보기
+                        </a>
+                    </div>
+
+                    <!-- Job AI -->
+                    <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-xl border-2 border-blue-100 hover:border-blue-300 transition-all duration-300 transform hover:scale-105 shadow-lg fade-in">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-bold mb-3 text-blue-800 flex items-center">
+                                <span class="text-3xl mr-3">💼</span>
+                                Job AI
+                            </h3>
+                            <p class="text-gray-700 mb-4">면접 역량 강화 AI 서비스</p>
+                            <p class="text-gray-600 text-sm mb-4">Azure AI/GPT-4 기반, RAG 및 DART 기반 페르소나 설계</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-3 text-blue-700">🛠️ 기술 스택:</h4>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Azure AI</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">GPT-4</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">RAG</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">DART</span>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-3 text-blue-700">📈 성과:</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                                <li>개인화 면접 코칭 시스템 구축</li>
+                                <li>DART 기반 페르소나 설계로 정확도 향상</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/howl-papa/job_ai" target="_blank" 
+                           class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd" />
+                            </svg>
+                            GitHub 보기
+                        </a>
+                    </div>
+
+                    <!-- RAG 기반 AI 보험 상담 챗봇 -->
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-xl border-2 border-green-100 hover:border-green-300 transition-all duration-300 transform hover:scale-105 shadow-lg fade-in">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-bold mb-3 text-green-800 flex items-center">
+                                <span class="text-3xl mr-3">🤖</span>
+                                RAG 기반 AI 보험 상담 챗봇 (ai-bo)
+                            </h3>
+                            <p class="text-gray-700 mb-4">보험 약관 해석 및 맞춤형 상담 서비스</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-3 text-green-700">🛠️ 기술 스택:</h4>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">RAG</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">NLP</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">챗봇</span>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-3 text-green-700">📈 성과:</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                                <li>보험 약관 자동 해석 시스템 구축</li>
+                                <li>프로젝트 리드로 팀 관리 및 기획</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 개인화 상품 추천 시스템 -->
+                    <div class="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-xl border-2 border-orange-100 hover:border-orange-300 transition-all duration-300 transform hover:scale-105 shadow-lg fade-in">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-bold mb-3 text-orange-800 flex items-center">
+                                <span class="text-3xl mr-3">🛍️</span>
+                                개인화 상품 추천 시스템
+                            </h3>
+                            <p class="text-gray-700 mb-4">GRU4Rec 기반 세션 기반 추천 엔진</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-3 text-orange-700">🛠️ 기술 스택:</h4>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">GRU4Rec</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">딥러닝</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">추천시스템</span>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-medium mb-3 text-orange-700">📈 성과:</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                                <li>Mercari 데이터셋 기반 모델 구축</li>
+                                <li>세션 기반 실시간 추천 구현</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold mb-4">💼 경력 & 리더십</h2>
+                    <p class="text-xl text-gray-600">실행력과 리더십이 검증된 다양한 경험들</p>
+                </div>
+                
+                <div class="space-y-8">
+                    <!-- Microsoft AI School -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg fade-in hover:shadow-xl transition-all duration-300">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">🎓 Microsoft AI School 수료생</h3>
+                                <p class="text-blue-600 font-medium text-lg">AI 전문가 과정</p>
+                            </div>
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">2025.04 - 2025.09</span>
+                        </div>
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            Microsoft AI School에서 AI 기술 전문가 과정을 수료하며 캡스톤 프로젝트를 리딩했습니다. 
+                            Responsible AI 구현과 실무 적용 능력을 함양했습니다.
+                        </p>
+                        <div>
+                            <h4 class="font-medium mb-3 text-gray-800 flex items-center">
+                                <span class="text-xl mr-2">🏆</span>주요 성과:
+                            </h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>캡스톤 프로젝트 리딩 및 팀 관리</li>
+                                <li>AI 윤리 및 Responsible AI 구현</li>
+                                <li>실무 중심 AI 솔루션 개발</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- VID Investment -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg fade-in hover:shadow-xl transition-all duration-300">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">📊 Corporate Research Analyst</h3>
+                                <p class="text-purple-600 font-medium text-lg">VID Investment</p>
+                            </div>
+                            <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium">2023 - 2024</span>
+                        </div>
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            기업 분석 및 투자 리서치 전문가로 활동하며 체계적인 분석 역량을 발휘했습니다.
+                        </p>
+                        <div>
+                            <h4 class="font-medium mb-3 text-gray-800 flex items-center">
+                                <span class="text-xl mr-2">🏆</span>주요 성과:
+                            </h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li><strong class="text-purple-600">85건의 기업분석 리포트</strong> 작성</li>
+                                <li><strong class="text-purple-600">156건의 투자콘텐츠</strong> 기획 및 제작</li>
+                                <li>데이터 기반 투자 의사결정 지원</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Life Enjoy -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg fade-in hover:shadow-xl transition-all duration-300">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">🚀 공동 창업자</h3>
+                                <p class="text-green-600 font-medium text-lg">Life Enjoy (반려인 사후 케어)</p>
+                            </div>
+                            <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">2022 - 2023</span>
+                        </div>
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            반려동물 사후 케어 서비스의 공동 창업자로 참여하여 사업 기획부터 운영까지 전 과정을 경험했습니다.
+                        </p>
+                        <div>
+                            <h4 class="font-medium mb-3 text-gray-800 flex items-center">
+                                <span class="text-xl mr-2">🏆</span>주요 성과:
+                            </h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>사업 기획 및 전략 수립</li>
+                                <li>팀 빌딩 및 운영 관리</li>
+                                <li>고객 니즈 분석 및 서비스 개선</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 1인 이커머스 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg fade-in hover:shadow-xl transition-all duration-300">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">💻 1인 이커머스 창업자</h3>
+                                <p class="text-orange-600 font-medium text-lg">패션 콘텐츠 & 커머스</p>
+                            </div>
+                            <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full font-medium">2021 - 2022</span>
+                        </div>
+                        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                            패션 콘텐츠 기반의 1인 이커머스 사업을 운영하며 디지털 마케팅과 온라인 비즈니스 역량을 쌓았습니다.
+                        </p>
+                        <div>
+                            <h4 class="font-medium mb-3 text-gray-800 flex items-center">
+                                <span class="text-xl mr-2">🏆</span>주요 성과:
+                            </h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>월평균 매출 <strong class="text-orange-600">35% 성장률</strong> 달성</li>
+                                <li><strong class="text-orange-600">98% 고객 만족도</strong> 달성</li>
+                                <li>콘텐츠 마케팅 및 SNS 운영</li>
+                                <li>데이터 분석 기반 비즈니스 최적화</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold mb-4">🛠️ 스킬 & 전문성</h2>
+                    <p class="text-xl text-gray-600">다양한 도메인에서 검증된 전문 역량</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- AI & Business Strategy -->
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl border-2 border-blue-100 fade-in">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-white text-2xl">🧠</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-800">AI & Business Strategy</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-blue-700">AI 서비스 기획</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-blue-700">전략 기획</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-blue-700">데이터 분석</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-blue-700">비즈니스 모델링</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills -->
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-xl border-2 border-green-100 fade-in">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-white text-2xl">⚙️</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-800">Technical Skills</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-green-700">Python</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-green-700">Power BI</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-green-700">PostgreSQL</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-green-700">Microsoft Azure</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-green-700">RAG/LLM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl border-2 border-purple-100 fade-in">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-white text-2xl">🤝</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-purple-800">Leadership & Communication</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-purple-700">프로젝트 리딩</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-purple-700">팀 관리</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-purple-700">비즈니스 커뮤니케이션</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border">
+                                <span class="font-medium text-purple-700">English (OPIc IM2)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Achievements -->
+                <div class="mt-16 fade-in">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-center mb-8">📊 Key Achievements</h3>
+                        <div class="grid md:grid-cols-4 gap-6 text-center">
+                            <div>
+                                <div class="text-3xl font-bold mb-2">85+</div>
+                                <div class="text-blue-100">기업분석 리포트</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold mb-2">35%</div>
+                                <div class="text-blue-100">월평균 매출 성장률</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold mb-2">98%</div>
+                                <div class="text-blue-100">고객 만족도</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold mb-2">130+</div>
+                                <div class="text-blue-100">독서모임 참여</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gradient text-white">
+            <div class="max-w-6xl mx-auto px-4 text-center fade-in">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-bold mb-6">📞 연락처</h2>
+                    <p class="text-xl md:text-2xl mb-8 leading-relaxed">
+                        AI 프로젝트나 비즈니스 협업에 관심이 있으시다면<br>
+                        언제든 연락주세요! 🚀
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                        <div class="text-4xl mb-4">📧</div>
+                        <h3 class="text-xl font-bold mb-2">이메일</h3>
+                        <p class="text-blue-100">직접 연락하기</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                        <div class="text-4xl mb-4">💼</div>
+                        <h3 class="text-xl font-bold mb-2">LinkedIn</h3>
+                        <p class="text-blue-100">전문적인 네트워킹</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                        <div class="text-4xl mb-4">💻</div>
+                        <h3 class="text-xl font-bold mb-2">GitHub</h3>
+                        <p class="text-blue-100">프로젝트 포트폴리오</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="mailto:yongrakpark@outlook.com" 
+                       class="bg-white text-blue-600 px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center space-x-2">
+                        <span class="text-xl">📧</span>
+                        <span>yongrakpark@outlook.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yongrak-pro" target="_blank" 
+                       class="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2">
+                        <span class="text-xl">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/howl-papa" target="_blank" 
+                       class="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2">
+                        <span class="text-xl">💻</span>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <div class="flex justify-center items-center space-x-3 mb-4">
+                    <div class="w-12 h-12 bg-gradient rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">박</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">박용락 Yongrak Park</h3>
+                        <p class="text-gray-400">AI 서비스 전략 기획자</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">
+                        &copy; 2024 박용락 Yongrak Park. Made with ❤️ and modern web technologies.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="mailto:yongrakpark@outlook.com" class="text-gray-400 hover:text-white transition-colors">Email</a>
+                        <a href="https://linkedin.com/in/yongrak-pro" target="_blank" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+                        <a href="https://github.com/howl-papa" target="_blank" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Active navigation highlight
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightNavigation() {
+            const scrollPos = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const bottom = top + section.offsetHeight;
+                const id = section.getAttribute('id');
+                
+                if (scrollPos >= top && scrollPos <= bottom) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('nav-active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('nav-active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNavigation);
+
+        // Download functionality for HTML files
+        async function downloadFile(url, filename) {
+            try {
+                const response = await fetch(url);
+                const blob = await response.blob();
+                const downloadUrl = window.URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = downloadUrl;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                
+                window.URL.revokeObjectURL(downloadUrl);
+                document.body.removeChild(a);
+            } catch (error) {
+                console.error('Download failed:', error);
+                // Fallback - open in new tab
+                window.open(url, '_blank');
+            }
+        }
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            highlightNavigation();
+        });
+    </script>
+</body>
+</html>
