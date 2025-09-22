@@ -2,7 +2,7 @@
 const nextConfig = {
   // Cloudflare Pages 배포 최적화
   output: 'export',
-  trailingSlash: true,
+  trailingSlash: false,
   distDir: 'out',
   images: {
     domains: ['localhost', 'gensparkstorageprodwest.blob.core.windows.net'],
