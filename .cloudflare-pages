@@ -1,0 +1,17 @@
+# Cloudflare Pages Configuration for www.yongrak.pro
+# This file ensures Cloudflare Pages uses correct build settings
+
+# Build Configuration
+build_command = "npm run build"
+build_output_directory = "out"
+node_version = "18"
+
+# Environment Variables (can be set in Cloudflare Dashboard)
+# NODE_ENV = "production"
+
+# Important Notes:
+# - No wrangler.toml file is used for Pages projects
+# - All routing and headers are handled by public/_headers and public/_redirects
+# - Build output goes to 'out' directory with static assets
+# - Domain: www.yongrak.pro
+# - Framework: Next.js with Static Export

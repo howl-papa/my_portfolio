@@ -167,6 +167,11 @@ nslookup www.yongrak.pro
 }
 ```
 
+### 🚨 중요: wrangler.toml 파일 사용 금지
+- **Cloudflare Pages는 wrangler.toml 파일을 사용하지 않습니다**
+- 모든 라우팅과 헤더는 `public/_headers`와 `public/_redirects`로 처리
+- Pages 프로젝트에서 wrangler.toml은 배포 오류를 발생시킵니다
+
 ### 배포된 파일들
 - ✅ `public/CNAME` → www.yongrak.pro
 - ✅ `public/_headers` → 보안 헤더 설정
