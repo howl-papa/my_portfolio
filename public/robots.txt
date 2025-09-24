@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.yongrak.pro/sitemap.xml
+
+# Important pages
+Allow: /
+Allow: /index.html
+Allow: /CV_Updated.html
+Allow: /Profile_Updated.html
+
+# Cloudflare Pages
+User-agent: CloudFlare-AlwaysOnline
+Allow: /
+
+# SEO optimization for portfolio
+Crawl-delay: 1
