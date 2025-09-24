@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '박용락 Yongrak Park - AI 서비스 전략 기획자',
     description: 'AI를 통해 기업의 ROI를 높이는 실행 중심의 전략가',
-    url: 'https://yongrak-portfolio.vercel.app',
+    url: 'https://www.yongrak.pro',
     siteName: 'Yongrak Park Portfolio',
     locale: 'ko_KR',
     type: 'website',
@@ -22,10 +22,11 @@ export const metadata: Metadata = {
     description: 'AI를 통해 기업의 ROI를 높이는 실행 중심의 전략가',
     creator: '@yongrak_pro',
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({

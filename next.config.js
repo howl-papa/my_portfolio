@@ -2,6 +2,7 @@
 const nextConfig = {
   // Cloudflare Pages 배포 최적화 - Static Export
   output: 'export',
+  distDir: 'out',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
   
