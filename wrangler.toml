@@ -1,0 +1,21 @@
+# Cloudflare Pages Configuration for www.yongrak.pro
+name = "yongrak-portfolio"
+compatibility_date = "2024-09-24"
+pages_build_output_dir = "out"
+
+[env.production]
+name = "yongrak-portfolio"
+
+[env.preview] 
+name = "yongrak-portfolio-preview"
+
+# Routes configuration
+[[routes]]
+pattern = "www.yongrak.pro/*"
+zone_id = "" # Will be configured in Cloudflare Dashboard
+
+[[routes]]
+pattern = "yongrak.pro/*"  
+zone_id = "" # Will be configured in Cloudflare Dashboard
+
+# Headers and redirects are handled by public/_headers and public/_redirects files

@@ -1,0 +1,11 @@
+# Cloudflare Pages Redirects Configuration for www.yongrak.pro
+
+# Redirect non-www to www
+https://yongrak.pro/* https://www.yongrak.pro/:splat 301!
+
+# Redirect HTTP to HTTPS (if needed)
+http://www.yongrak.pro/* https://www.yongrak.pro/:splat 301!
+http://yongrak.pro/* https://www.yongrak.pro/:splat 301!
+
+# SPA Fallback - All routes should serve index.html for client-side routing
+/* /index.html 200

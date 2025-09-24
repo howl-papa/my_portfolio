@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build",
-    "deploy": "npm run export && echo 'Ready for deployment!'"
+    "deploy": "npm run build && echo 'Ready for Cloudflare Pages deployment!'",
+    "cf:build": "next build",
+    "cf:dev": "next dev"
   },
   "dependencies": {
     "framer-motion": "^11.15.0",
