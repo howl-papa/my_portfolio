@@ -16,6 +16,7 @@ function Footer() {
             <Row>
                 <Col md="4" className="footer-copywright">
                     <h3>Designed and Developed by Yongrak Park</h3>
+                    <h3 style={{ fontSize: "0.9em", marginTop: "5px" }}>Adapted from <a href="https://github.com/soumyajit4419/Portfolio" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">Soumyajit4419</a></h3>
                 </Col>
                 <Col md="4" className="footer-copywright">
                     <h3>Copyright © {year} YP</h3>
