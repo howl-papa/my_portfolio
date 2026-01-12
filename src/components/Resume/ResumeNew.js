@@ -7,6 +7,15 @@ import { AiOutlineDownload } from "react-icons/ai";
 import ResumeContent from "./ResumeContent";
 
 function ResumeNew() {
+  const trackDownload = () => {
+    if (window.gtag) {
+      window.gtag("event", "download_cv", {
+        event_category: "Resume",
+        event_label: "PDF Download",
+      });
+    }
+  };
+
   return (
     <div>
       <Container fluid className="resume-section">
@@ -17,6 +26,7 @@ function ResumeNew() {
             href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
+            onClick={trackDownload}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -33,6 +43,7 @@ function ResumeNew() {
             href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
+            onClick={trackDownload}
           >
             <AiOutlineDownload />
             &nbsp;Download CV

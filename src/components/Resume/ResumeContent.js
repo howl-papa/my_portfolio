@@ -1,15 +1,24 @@
 import React from "react";
 
 function ResumeContent() {
+    const trackEvent = (eventName, category, label) => {
+        if (window.gtag) {
+            window.gtag("event", eventName, {
+                event_category: category,
+                event_label: label,
+            });
+        }
+    };
+
     return (
         <div className="resume-content-wrapper">
             <div className="resume-header">
                 <div className="resume-name">Yongrak Park</div>
                 <div className="resume-title">AI Product Builder (0-to-1) | Global Retail Scaler | MS AI School Graduate</div>
                 <div className="resume-contact-info">
-                    <a href="mailto:yongrak.pro@gmail.com">yongrak.pro@gmail.com</a>
-                    <a href="https://linkedin.com/in/yongrak-pro" target="_blank" rel="noopener noreferrer">linkedin.com/in/yongrak-pro</a>
-                    <a href="https://github.com/howl-papa" target="_blank" rel="noopener noreferrer">github.com/howl-papa</a>
+                    <a href="mailto:yongrak.pro@gmail.com" onClick={() => trackEvent("click_contact", "Resume", "Email")}>yongrak.pro@gmail.com</a>
+                    <a href="https://linkedin.com/in/yongrak-pro" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_social", "Resume", "LinkedIn")}>linkedin.com/in/yongrak-pro</a>
+                    <a href="https://github.com/howl-papa" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_social", "Resume", "GitHub")}>github.com/howl-papa</a>
                     <span>Seoul, South Korea</span>
                 </div>
             </div>
@@ -21,7 +30,7 @@ function ResumeContent() {
                     business problems to designing solutions and hands-on engineering. I possess proven 0-to-1 experience in building
                     AI products leveraging <strong>RAG/LlamaIndex, FastAPI, and PostgreSQL</strong>, functioning as an
                     execution-oriented strategist who maximizes corporate ROI. Currently, I am developing AI solutions for the <a
-                        href="https://www.beautyinsightlab.com" target="_blank" rel="noopener noreferrer"><strong>K-beauty sector [Live Demo]</strong></a>, with a
+                        href="https://www.beautyinsightlab.com" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_project", "Resume", "BeautyInsightLab")}><strong>K-beauty sector [Live Demo]</strong></a>, with a
                     roadmap
                     that includes <strong>Export Unit Price Monitoring</strong> and a <strong>Beauty Market Localization
                         Agent</strong>.
@@ -61,7 +70,7 @@ function ResumeContent() {
                 <div className="resume-entry">
                     <div className="resume-entry-header">
                         <div className="resume-entry-title">
-                            <a href="https://github.com/project-ares-interview" target="_blank" rel="noopener noreferrer">Job AI: Practical Interview Skills
+                            <a href="https://github.com/project-ares-interview" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_project", "Resume", "Job AI")}>Job AI: Practical Interview Skills
                                 Enhancement Service</a>
                         </div>
                         <div className="resume-entry-date">Aug 2025 - Dec 2025</div>
@@ -72,7 +81,7 @@ function ResumeContent() {
                             <li>My Role: AI Developer</li>
                             <li>Tech Stack: Azure(Storage, AI Search, OpenAI), RAG(LlamaIndex), DuckDuckGo Search</li>
                             <li>Applied RAG technology to DART business reports, improving model accuracy from 62% to 94%</li>
-                            <li>Links: <a href="https://github.com/project-ares-interview/RAG-LlamaIndex" target="_blank" rel="noopener noreferrer">Github</a>
+                            <li>Links: <a href="https://github.com/project-ares-interview/RAG-LlamaIndex" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_github", "Resume", "Job AI Repo")}>Github</a>
                             </li>
                         </ul>
                     </div>
@@ -80,7 +89,7 @@ function ResumeContent() {
                 <div className="resume-entry">
                     <div className="resume-entry-header">
                         <div className="resume-entry-title">
-                            <a href="https://github.com/howl-papa/ai-bo" target="_blank" rel="noopener noreferrer">AI Insurance Consultation Chatbot (ai-bo)</a>
+                            <a href="https://github.com/howl-papa/ai-bo" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_project", "Resume", "ai-bo")}>AI Insurance Consultation Chatbot (ai-bo)</a>
                         </div>
                         <div className="resume-entry-date">Jun 2025 - Aug 2025</div>
                     </div>
@@ -92,7 +101,7 @@ function ResumeContent() {
                             <li>led a project to build an Enterprise AI Solution based on Azure OpenAI, conducted entirely online from
                                 start to finish.</li>
                             <li>Addressed low comprehension rates (12%) and high claim error rates (47%) in the insurance sector.</li>
-                            <li>Links: <a href="https://github.com/howl-papa/ai-bo" target="_blank" rel="noopener noreferrer">Github</a></li>
+                            <li>Links: <a href="https://github.com/howl-papa/ai-bo" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_github", "Resume", "ai-bo Repo")}>Github</a></li>
                         </ul>
                     </div>
                 </div>
@@ -103,7 +112,7 @@ function ResumeContent() {
                 <div className="resume-entry">
                     <div className="resume-entry-header">
                         <div className="resume-entry-title">
-                            <a href="https://www.beautyinsightlab.com/localization" target="_blank" rel="noopener noreferrer">Localization Translation Agent</a>
+                            <a href="https://www.beautyinsightlab.com/localization" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_project", "Resume", "Localization Agent")}>Localization Translation Agent</a>
                         </div>
                         <div className="resume-entry-date">Jan 2026 - Present</div>
                     </div>
@@ -113,15 +122,15 @@ function ResumeContent() {
                         Market (Sephora, Amazon, Ulta). It moves beyond simple language translation to perform Marketing Transcreation
                         <ul>
                             <li>Tech Stack: Python (FastAPI), Poetry </li>
-                            <li>Links: <a href="https://www.beautyinsightlab.com/localization" target="_blank" rel="noopener noreferrer">Live PoC</a> | <a
-                                href="https://github.com/Beauty-Insight-Lab-Inc/beauty-inside-lab-mvp" target="_blank" rel="noopener noreferrer">Github</a></li>
+                            <li>Links: <a href="https://www.beautyinsightlab.com/localization" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_project", "Resume", "Localization Agent Live")}>Live PoC</a> | <a
+                                href="https://github.com/Beauty-Insight-Lab-Inc/beauty-inside-lab-mvp" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_github", "Resume", "Localization Agent Repo")}>Github</a></li>
                         </ul>
                     </div>
                 </div>
                 <div className="resume-entry">
                     <div className="resume-entry-header">
                         <div className="resume-entry-title">
-                            <a href="https://www.beautyinsightlab.com/" target="_blank" rel="noopener noreferrer">Export Tracker Dashboard</a>
+                            <a href="https://www.beautyinsightlab.com/" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_project", "Resume", "Export Tracker")}>Export Tracker Dashboard</a>
                         </div>
                         <div className="resume-entry-date">Jan 2026 - Present</div>
                     </div>
@@ -131,8 +140,8 @@ function ResumeContent() {
                         monitor export unit prices and distribution channels to prevent revenue loss.
                         <ul>
                             <li>Tech Stack: Next.js, Tailwind CSS, TypeScript</li>
-                            <li>Links: <a href="https://www.beautyinsightlab.com/" target="_blank" rel="noopener noreferrer">Live Demo</a> | <a
-                                href="https://github.com/Beauty-Insight-Lab-Inc/K-Beauty-Export-Tracker" target="_blank" rel="noopener noreferrer">Github</a></li>
+                            <li>Links: <a href="https://www.beautyinsightlab.com/" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_project", "Resume", "Export Tracker Live")}>Live Demo</a> | <a
+                                href="https://github.com/Beauty-Insight-Lab-Inc/K-Beauty-Export-Tracker" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_github", "Resume", "Export Tracker Repo")}>Github</a></li>
                         </ul>
                     </div>
                 </div>
@@ -140,7 +149,7 @@ function ResumeContent() {
                     <div className="resume-entry-header">
                         <div className="resume-entry-title">
                             <a href="https://github.com/Beauty-Insight-Lab-Inc/AI-Creator-Matching-Engine-Prototype-"
-                                target="_blank" rel="noopener noreferrer">Creator Campaign Matching Engine</a>
+                                target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_project", "Resume", "Matching Engine")}>Creator Campaign Matching Engine</a>
                         </div>
                         <div className="resume-entry-date">Nov 2025 - Dec 2025</div>
                     </div>
@@ -152,14 +161,14 @@ function ResumeContent() {
                             <li>Developed an ROI prediction model to solve the problem of low matching accuracy in influencer marketing.
                             </li>
                             <li>Links: <a href="https://github.com/Beauty-Insight-Lab-Inc/AI-Creator-Matching-Engine-Prototype-"
-                                target="_blank" rel="noopener noreferrer">Github</a></li>
+                                target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_github", "Resume", "Matching Engine Repo")}>Github</a></li>
                         </ul>
                     </div>
                 </div>
                 <div className="resume-entry">
                     <div className="resume-entry-header">
                         <div className="resume-entry-title">
-                            <a href="https://github.com/howl-papa/my-beauty-ai-skincare" target="_blank" rel="noopener noreferrer">Personalized Skincare Routine
+                            <a href="https://github.com/howl-papa/my-beauty-ai-skincare" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_project", "Resume", "Skincare Design")}>Personalized Skincare Routine
                                 Design</a>
                         </div>
                         <div className="resume-entry-date">Jun 2025 - Sep 2025</div>
@@ -169,7 +178,7 @@ function ResumeContent() {
                         LlamaIndex RAG and PostgreSQL.
                         <ul>
                             <li>Constructed a cosmetic ingredient database to analyze conflicts and optimize skincare routines.</li>
-                            <li>Links: <a href="https://github.com/howl-papa/my-beauty-ai-skincare" target="_blank" rel="noopener noreferrer">Github</a></li>
+                            <li>Links: <a href="https://github.com/howl-papa/my-beauty-ai-skincare" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_github", "Resume", "Skincare Design Repo")}>Github</a></li>
                         </ul>
                     </div>
                 </div>
@@ -319,7 +328,7 @@ function ResumeContent() {
                     <div className="resume-entry-header">
                         <div className="resume-entry-title">
                             <a href="https://skillshop.credential.net/511651c9-8355-42da-ab37-73498e1e78b1#acc.uM6NA3P9"
-                                target="_blank" rel="noopener noreferrer">Google Analytics Certification (GA4)</a>
+                                target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_certification", "Resume", "GA4")}>Google Analytics Certification (GA4)</a>
                         </div>
                         <div className="resume-entry-date">Dec 2025</div>
                     </div>
@@ -328,7 +337,7 @@ function ResumeContent() {
                 <div className="resume-entry">
                     <div className="resume-entry-header">
                         <div className="resume-entry-title">
-                            <a href="https://verify.skilljar.com/c/sbdch99vvced" target="_blank" rel="noopener noreferrer">Introduction to Model Context
+                            <a href="https://verify.skilljar.com/c/sbdch99vvced" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_certification", "Resume", "MCP")}>Introduction to Model Context
                                 Protocol</a>
                         </div>
                         <div className="resume-entry-date">Sep 2025</div>
@@ -346,7 +355,7 @@ function ResumeContent() {
                     <div className="resume-entry-header">
                         <div className="resume-entry-title">
                             <a href="https://www.credly.com/badges/48c1839d-ad9e-4939-bce6-5afcc6047beb/linked_in_profile"
-                                target="_blank" rel="noopener noreferrer">Azure AI Fundamentals (AI-900)</a>
+                                target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("click_certification", "Resume", "Azure AI-900")}>Azure AI Fundamentals (AI-900)</a>
                         </div>
                         <div className="resume-entry-date">Aug 2025</div>
                     </div>
