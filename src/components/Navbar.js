@@ -97,7 +97,7 @@ function NavBar() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <ImBlog style={{ marginBottom: "2px" }} /> Writing
+                                <ImBlog style={{ marginBottom: "2px" }} /> Tech-blog
                             </Nav.Link>
                         </Nav.Item>
 

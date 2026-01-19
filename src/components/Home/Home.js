@@ -34,7 +34,7 @@ function Home() {
                 <strong className="main-name"> YONGRAK PARK</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "center" }}>
+              <div className="type-component">
                 <Type />
               </div>
             </Col>

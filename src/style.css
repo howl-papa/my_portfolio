@@ -290,6 +290,20 @@ button:focus {
   padding-left: 45px !important;
 }
 
+@media (max-width: 767px) {
+  .heading {
+    font-size: 1.8em !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .heading-name {
+    font-size: 1.8em !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+}
+
 .main-name {
   color: #cd5ff8;
 }
@@ -305,11 +319,21 @@ button:focus {
   color: #b562d6 !important;
 }
 
+.type-component {
+  padding: 50px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .type-component {
+    padding: 5px;
+  }
+}
+
 @media (max-width: 767px) {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
-    position: absolute !important;
   }
 
   .Typewriter__cursor {
@@ -478,7 +502,6 @@ button:focus {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
-  opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
@@ -522,7 +545,6 @@ button:focus {
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
   border-radius: 10px !important;
 }
 
