@@ -578,6 +578,12 @@ button:focus {
   padding-top: 10px !important;
 }
 
+.project-summary {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 1.1em !important;
+}
+
 /* --------- */
 /* About */
 /* --------- */

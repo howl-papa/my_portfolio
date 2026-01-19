@@ -83,7 +83,7 @@ function Projects() {
                             imgPath={CreatorMatchingEngine}
                             isBlog={false}
                             title="Creator Campaign Matching Engine"
-                            summary="브랜드 '결'과 데이터를 결합한 인플루언서 마케팅 ROI 예측 엔진"
+                            summary="브랜드 '결'과 데이터를 결합한 인플루언서 마케팅 ROI 예측 "
                             description="Hybrid Filtering Matchmaking Engine Prototype (PoC). Built a matchmaking engine combining quantitative data (followers, views) with qualitative brand attributes (Contextual Fit) to predict campaign ROI. Developed an ROI prediction model to solve the problem of low matching accuracy. Stack: Random Forest Regressor, PostgreSQL, Scikit-learn"
                             ghLink="https://github.com/Beauty-Insight-Lab-Inc/AI-Creator-Matching-Engine-Prototype-"
                         />
@@ -95,8 +95,8 @@ function Projects() {
                             imgPath={MyBeautyAI}
                             isBlog={false}
                             title="Personalized Skincare Routine Design"
-                            summary="화장품 전성분 분석을 통한 개인 맞춤형 스킨케어 루틴 컨설턴트"
-                            description="AI Skin Care Routine Consultant Dataset Construction. Developed an AI consultation service based on full ingredient analysis using LlamaIndex RAG and PostgreSQL. Constructed a cosmetic ingredient database to analyze conflicts and optimize skincare routines."
+                            summary="화장품 전성분을 통한 개인 맞춤형 스킨케어 루틴 데이터셋 구축"
+                            description="AI Skin Care Routine Dataset Construction. Developed an AI consultation service based on full ingredient analysis using LlamaIndex RAG and PostgreSQL. Constructed a cosmetic ingredient database to analyze conflicts and optimize skincare routines."
                             ghLink="https://github.com/howl-papa/my-beauty-ai-skincare"
                         />
                     </Col>
