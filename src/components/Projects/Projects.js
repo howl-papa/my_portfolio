@@ -60,7 +60,7 @@ function Projects() {
                             title="Localization Translation AI-Agent"
                             summary="뷰티 브랜드의 미국 진출을 돕는 마케팅 현지화 번역 에이전트"
                             description="AI Agent responsible for 'Translation-Agent' logic and strategic verification. Designed exclusively for the Korean Beauty (K-Beauty) industry entering the US Market. It moves beyond simple language translation to perform Marketing Transcreation. Stack: Python (FastAPI), Poetry"
-                            ghLink="https://github.com/Beauty-Insight-Lab-Inc/beauty-inside-lab-mvp"
+                            ghLink="https://github.com/Beauty-Insight-Lab-Inc/Beauty-Insight-Lab-Showcase"
                             demoLink="https://www.beautyinsightlab.com/localization"
                         />
                     </Col>
@@ -72,7 +72,7 @@ function Projects() {
                             title="Export Tracker Dashboard"
                             summary="K-뷰티 수출 가격과 유통 채널을 한눈에 보는 대시보드"
                             description="Global Retail Scaler | Developed a dashboard to help small-scale K-Beauty brands monitor export unit prices and distribution channels to prevent revenue loss. Stack: Next.js, Tailwind CSS, TypeScript"
-                            ghLink="https://github.com/Beauty-Insight-Lab-Inc/beauty-inside-lab-mvp"
+                            ghLink="https://github.com/Beauty-Insight-Lab-Inc/Beauty-Insight-Lab-Showcase"
                             demoLink="https://www.beautyinsightlab.com/"
                         />
                     </Col>

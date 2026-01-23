@@ -3,6 +3,10 @@
 This is the personal portfolio website of **Yongrak Park**, built with React.js.
 It showcases my projects, skills, and resume as an AI Product Builder & K-Beauty Strategist.
 
+![Portfolio Preview](portfolio.gif)
+
+### Live Site: [https://www.yongrak.pro/](https://www.yongrak.pro/)
+
 ## Credit and Attribution
 
 This project is a forked and modified version of [Portfolio](https://github.com/soumyajit4419/Portfolio) by [Soumyajit Behera](https://github.com/soumyajit4419).
